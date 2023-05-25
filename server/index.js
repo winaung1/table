@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import mysql from 'mysql';
 const app = express()
+
 app.use(cors())
 app.use(express.json())
 
@@ -13,8 +14,6 @@ var db = mysql.createConnection({
     password: 'bdc79cf8',
     database: 'heroku_b15747ef21e441a'
   })
-
-//   mysql://b1b12979aeb4c3:bdc79cf8@us-cdbr-east-06.cleardb.net/heroku_b15747ef21e441a?
 
 // app.get('/', (req, res) => {
 //     res.send("hello world")
