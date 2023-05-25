@@ -6,14 +6,15 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const port = 3001;
+const PORT = 3001;
 var db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Htoolaypaw1*',
-    database: 'wintable'
+    host: 'us-cdbr-east-06.cleardb.net',
+    user: 'b1b12979aeb4c3',
+    password: 'bdc79cf8',
+    database: 'heroku_b15747ef21e441a'
   })
 
+//   mysql://b1b12979aeb4c3:bdc79cf8@us-cdbr-east-06.cleardb.net/heroku_b15747ef21e441a?
 
 // app.get('/', (req, res) => {
 //     res.send("hello world")
@@ -56,6 +57,6 @@ app.put('/update', (req, res) => {
 
 
 
-app.listen(process.env.PORT || port, () => {
-    console.log(`app running ${port}`)
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`app running ${PORT}`)
 })

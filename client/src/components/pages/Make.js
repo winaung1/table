@@ -10,7 +10,7 @@ export const Make = () => {
      age
    }
   const handleClick = async () => {
-   await axios.post('http://localhost:3001/create', datas)
+   await axios.post('https://tabledeploy.herokuapp.com/create', datas)
   }
   return (
     <div className='p-3'>

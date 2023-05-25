@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
 
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:3001/")
+      const res = await axios.get("https://tabledeploy.herokuapp.com/")
       setData(res.data)
       
     }
@@ -24,7 +24,7 @@ function Home() {
     setId(id)
    }
   const handleUpdate = async (id) => {
-    await axios.put('http://localhost:3001/update', {name: name, age: age, id: id})
+    await axios.put('https://tabledeploy.herokuapp.com/update', {name: name, age: age, id: id})
    }
 
 
